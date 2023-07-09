@@ -40,16 +40,18 @@ body::-webkit-scrollbar-thumb{
     padding: 2em;
     position: fixed;
     top: 0;
-    z-index: 9999;
+    z-index: 10000;
     width: 100vw;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     transition: 0.5s;
 }
 
 .main.abajo {
     background: #ffffff;
     padding: 1em;
+
 }
 .abajo li a{
     color: black;
@@ -116,6 +118,10 @@ body::-webkit-scrollbar-thumb{
     align-items: center;
 }
 
+.info {
+    margin: 25px;
+}
+
 .info h1 {
     font-size: 3em;
 }
@@ -126,6 +132,7 @@ body::-webkit-scrollbar-thumb{
 
 .teaser {
     font-size: 1.2em;
+
 }
 
 .button {
@@ -146,20 +153,22 @@ body::-webkit-scrollbar-thumb{
 
 .container {
     background-color: #222831;
+    padding: 25px;
+
+}
+
+.container img{
+    min-width: 140px;
 }
 
 /*Main section two*/
 .container-two {
-     background-color: #27374D;
+    background-color: #27374D;
 }
 
-.container-two h1{
-    margin-left: 70px;
-}
-
-.container-two img{
+/* .container-two img{
     width: 15%;
-}
+} */
 
 .container-container {
     display: grid;
@@ -271,3 +280,61 @@ body::-webkit-scrollbar-thumb{
     brightness(95%) contrast(87%);
 }
 
+
+
+@media (max-width: 992px) {
+    /* Agrega aquí los estilos para pantallas medianas */
+    .main {
+        width: 100%;
+    }
+
+    .container-container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        align-items: center;
+        gap: 5em;
+        }
+    
+        .container-container img{
+            width: 90px;
+        }
+  }
+
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 768px) {
+
+    .container {
+        width: auto;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .redes {
+        display: none;
+    }
+    
+    .container-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2em;
+    }
+
+    .container-container img{
+        width: 85px;
+    }
+    .footer {
+        display: block;
+    }
+
+  }
+
+  /* Estilos para pantallas medianas */
+  
+  
+  /* Estilos para pantallas grandes */
+  @media (min-width: 1200px) {
+    /* Agrega aquí los estilos para pantallas grandes */
+  }
