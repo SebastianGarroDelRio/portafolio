@@ -1,0 +1,57 @@
+---------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------
+sitio-web/
+|-- public/
+|   |-- index.html
+|   |-- assets/
+|   |   |-- css/
+|   |   |   |-- styles.css
+|   |   |-- js/
+|   |   |   |-- main.js
+|   |   |-- img/
+|   |   |   |-- imagen1.jpg
+|   |   |   |-- imagen2.png
+|-- src/
+|   |-- components/
+|   |   |-- header/
+|   |   |   |-- Header.js
+|   |   |   |-- Header.css
+|   |-- pages/
+|   |   |-- home/
+|   |   |   |-- Home.js
+|   |   |   |-- Home.css
+|   |   |-- about/
+|   |   |   |-- About.js
+|   |   |   |-- About.css
+|   |   |-- contact/
+|   |   |   |-- Contact.js
+|   |   |   |-- Contact.css
+|   |-- services/
+|   |   |-- Services.js
+|   |   |-- Services.css
+|   |-- utils/
+|   |   |-- api.js
+|   |   |-- helpers.js
+|-- .gitignore
+|-- package.json
+|-- README.md
+---------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------
+
+public/: Esta carpeta contiene los archivos públicos que se servirán al cliente. Aquí encontrarás el archivo index.html, que es la página principal de tu sitio web, y la carpeta assets/, que almacena todos los recursos estáticos como archivos CSS, JavaScript e imágenes.
+
+src/: Esta es la carpeta donde se encuentra el código fuente de tu proyecto.
+
+components/: Aquí se almacenan los componentes reutilizables del sitio web. Cada componente debe estar contenido en su propia carpeta y tener tanto el archivo JavaScript (por ejemplo, Header.js) como los estilos asociados (por ejemplo, Header.css).
+
+pages/: Esta carpeta contiene las diferentes páginas de tu sitio web. Cada página tiene su propia carpeta y contiene los archivos JavaScript y CSS asociados.
+
+services/: Si tu sitio web tiene lógica de negocio o funciones específicas, puedes organizarlas aquí. Por ejemplo, si tienes una funcionalidad de "Servicios", puedes poner los archivos relacionados en esta carpeta.
+
+utils/: Aquí puedes colocar archivos de utilidades, como funciones de ayuda o módulos de conexión con servicios externos. Por ejemplo, un archivo api.js podría contener funciones para comunicarse con una API externa.
+
+.gitignore: Un archivo que especifica qué archivos o carpetas deben ser ignorados por Git durante el control de versiones.
+
+package.json: El archivo que contiene la información sobre el proyecto y las dependencias necesarias para ejecutarlo.
+
+README.md: Un archivo que proporciona información sobre el proyecto, cómo configurarlo y ejecutarlo, así como cualquier otra documentación relevante.

@@ -1,0 +1,273 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto Slab', serif;
+    background-color: #393E46;
+
+}
+
+body.active {
+    background-color: rgb(red, red, red);
+}
+
+
+body::-webkit-scrollbar{
+    width: 5px;
+    background: #DDE6ED;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #393E46;
+    border-radius: 20px;
+}
+
+#page {
+    color: white;
+}
+
+/*header section*/
+
+/*logo inicio*/
+.main {
+    background-color: #222831;
+    padding: 2em;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.5s;
+}
+
+.main.abajo {
+    background: #ffffff;
+    padding: 1em;
+}
+.abajo li a{
+    color: black;
+}
+.abajo h1 span{
+    color: black;
+}
+
+
+.logo {
+    margin-left: 105px;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #64CCC5;
+    font-size: 1.2em;
+}
+
+.logo span{
+    margin-left: 10px;
+    color: #DDE6ED;
+}
+/*logo fin*/
+
+/*menu inicio*/
+.menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 7px;
+    margin-right: 105px;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a, .menu-icon a{
+    color: #DDE6ED;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+}
+
+.menu .activo {
+    color: #64CCC5;
+}
+
+.menu a:hover{
+    background-color: #DDE6ED;
+    color: #64CCC5;
+    transition: ease-in 0.2s;
+}
+
+
+/*menu fin*/
+
+/*Main section one*/
+.container, .container-two, .container-three, .container-four{
+    /* width: 90vw; */
+    height: 100vh;/*Largo pantalla total*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info h1 {
+    font-size: 3em;
+}
+
+.info span {
+    color: #64CCC5;
+}
+
+.teaser {
+    font-size: 1.2em;
+}
+
+.button {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #393E46;
+    color: #DDE6ED;
+    transition: ease-in 0.1s;
+}
+
+.container {
+    background-color: #222831;
+}
+
+/*Main section two*/
+.container-two {
+     background-color: #27374D;
+}
+
+.container-two h1{
+    margin-left: 70px;
+}
+
+.container-two img{
+    width: 15%;
+}
+
+.container-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr 1fr );
+    align-items: center;
+    gap: 4em;
+}
+
+
+.container-container img {
+    width: 100px;
+    filter: drop-shadow(0 0 5px #fff);
+    transition: all 0.3s;
+}
+
+.container-container img:hover{
+    filter: drop-shadow(0 0 10px #fff);
+
+}
+
+/*Main section three*/
+.container-three {
+    background-color: #27374D;
+}
+
+/*Main section three*/
+.container-four {
+    background-color: #27374D;
+}
+
+
+/*Footer section*/
+.footer {
+    background-color: #222831;
+    display: flex;
+    height: 10rem;
+    flex-direction: column;
+    row-gap: 1.25rem;
+    /* font-family: Nunito,sans-serif; */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.social-network {
+    display: flex;
+    margin-top: 20px;
+}
+
+.social-network a{
+    display: flex;
+    margin: 5px;
+
+    border-radius: 50%;
+    background-color: #393E46;
+}
+
+.social-network img{
+    padding: 10px;
+}
+
+.social-network img:hover {
+    filter: invert(42%) sepia(6%) saturate(6950%) hue-rotate(178deg) 
+    brightness(95%) contrast(87%);
+}
+
+
+.legal-footer {
+    padding: 1em;
+}
+
+.legal-footer ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+
+.legal-footer li{ 
+    list-style: none;
+}
+
+.redes {
+    position: absolute;
+    top: 45%;
+    right: 30px;
+    padding: 7px 4px 4px 6px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    z-index: 9999;
+}
+
+.redes div {
+    width: 94%;
+    height: 2px;
+    background: #fff;
+    margin: 7px 0 6px 0;
+}
+
+.redes img {
+    display: block;
+}
+
+.redes img:hover {
+    filter: invert(42%) sepia(6%) saturate(6950%) hue-rotate(178deg) 
+    brightness(95%) contrast(87%);
+}
+
