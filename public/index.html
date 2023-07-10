@@ -12,15 +12,27 @@
 <body>
     <div id="page">
         <header>
-            <nav class="main"><!--debo cambiar el h1-->
-                <h1 class="logo"><a href="index.html">&lt;<span>SG</span> /&gt;</a></h1>
-                <ul class="menu">
-                    <li><a class="activo" href="index.html">My profile</a></li>
-                    <li><a href="#habilidades">Skills</a></li>
-                    <li><a href="#proyectos">Projects</a></li>
-                    <li><a href="#contacto">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="back">
+                <div class="menu header">
+                    <!-- Logo -->
+                    <a class="logo" href="index.html">&lt; <span>SG</span> /&gt;</a>
+                    <input type="checkbox" id="menu">
+                    <!-- MenuHamburguesa -->
+                    <label for="menu">
+                        <img class="menu-icono" src="assents/img/menu.png" alt="MenuHamburguesa">
+                    </label>
+    
+                    <nav class="navbar">
+                        <ul>
+                            <li><a class="activo" href="index.html">My profile</a></li>
+                            <li><a href="#habilidades">Skills</a></li>
+                            <li><a href="#proyectos">Projects</a></li>
+                            <li><a href="#contacto">Contact</a></li>
+                        </ul>
+                    </nav>
+    
+                </div>
+            </div>
         </header>
 
         <main >
@@ -109,14 +121,13 @@
                     </ul>
                 </nav>
             </section>
-    </div>
+    
         </footer>
-
-
+    </div>
     <script type="text/javascript">
          window.addEventListener("scroll", function() {
-        var main = document.querySelector(".main");
-        main.classList.toggle("abajo", window.scrollY > 0);
+        var menu = document.querySelector(".menu");
+        menu.classList.toggle("abajo", window.scrollY > 0);
     });
     </script>
 </body>
