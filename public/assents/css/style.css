@@ -1,22 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;900&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body{
     font-family: 'Roboto Slab', serif;
     background-color: #393E46;
-
 }
-
-body.active {
-    background-color: rgb(red, red, red);
-}
-
 
 body::-webkit-scrollbar{
     width: 5px;
@@ -40,9 +28,10 @@ body::-webkit-scrollbar-thumb{
     margin: 0 auto; /*margen 0 arriba y abajo; auto izquierda y derecha*/
 }
 .back {
-    padding: 32px 0; /*paddnig 0 arriba y abajo; auto izquierda y derecha*/
+    padding: 25px 0; /*paddnig 0 arriba y abajo; auto izquierda y derecha*/
     background: #27374D;
 }
+
 .menu {
     background:#222831;
     position: fixed;
@@ -55,9 +44,9 @@ body::-webkit-scrollbar-thumb{
     z-index: 10000;
     transition: 0.5s;
     width: 100vw;
-    padding: 1.5em;
-    
+    padding: 15px 0 ;
 }
+
 .logo {
     font-size: 2em;
     color:#64CCC5;
@@ -85,6 +74,7 @@ body::-webkit-scrollbar-thumb{
     font-weight: bold;
 }
 .menu .navbar ul li a:hover {
+    
     background-color: #DDE6ED;
     color: #64CCC5;
     transition: ease-in 0.2s;
@@ -104,7 +94,7 @@ body::-webkit-scrollbar-thumb{
 
 .back .abajo {
     background: #ffffff;
-    padding: 0.5em;
+    padding: 10px 0;
 }
 
 .abajo .logo span{
@@ -138,7 +128,7 @@ body::-webkit-scrollbar-thumb{
 /*Main section one*/
 .container, .container-two, .container-three, .container-four{
     /* width: 90vw; */
-    height: 100vh;/*Largo pantalla total*/
+    height: 90vh;/*Largo pantalla total*/
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -179,8 +169,7 @@ body::-webkit-scrollbar-thumb{
 
 .container {
     background-color: #222831;
-    padding: 25px;
-
+    padding: 20px 25px;
 }
 
 .container img{
@@ -203,7 +192,6 @@ body::-webkit-scrollbar-thumb{
     gap: 4em;
 }
 
-
 .container-container img {
     width: 100px;
     filter: drop-shadow(0 0 5px #fff);
@@ -224,7 +212,6 @@ body::-webkit-scrollbar-thumb{
 .container-four {
     background-color: #27374D;
 }
-
 
 /*Footer section*/
 .footer {
@@ -264,26 +251,20 @@ body::-webkit-scrollbar-thumb{
     brightness(95%) contrast(87%);
 }
 
-
 .legal-footer {
-    padding: 1em;
-}
-
-.legal-footer ul{
+    padding: 1px 50px;
     display: flex;
     justify-content: space-between;
-    align-items: end;
 }
 
-
-.legal-footer li{ 
+.legal-footer li{
     list-style: none;
 }
 
 .redes {
     position: absolute;
     top: 45%;
-    right: 30px;
+    right: 20px;
     padding: 7px 4px 4px 6px;
     border: 2px solid #fff;
     border-radius: 5px;
@@ -308,13 +289,13 @@ body::-webkit-scrollbar-thumb{
 
 @media(max-width:992px) {
     .menu {
-        padding: 30px;
+        padding: 15px 0;
     }
     .menu label {
         display: initial;
     }
     .back {
-        padding: 45px 0;
+        padding: 40px 0;
     }
     .menu .navbar{
         position: absolute;
@@ -347,13 +328,17 @@ body::-webkit-scrollbar-thumb{
     .container-container img{
         width: 90px;
     }
+
+    .container img {
+        
+    }
 }
 
 /* Estilos para pantallas más pequeñas */
 @media (max-width: 768px) {
 
     .menu {
-        padding: 30px;
+        padding: 15px 0;
     }
     .menu label {
         display: initial;
@@ -377,10 +362,35 @@ body::-webkit-scrollbar-thumb{
         display: initial;
     }
 
-    /**/
+    .info h1 {
+       font-size: 35px;
+    }
 
+    .info .teaser {
+        font-size: 20px;
+     }
+
+    .container img {
+        display: none;
+    }
+
+    /**/
     .redes {
         display: none;
+    }
+
+    .legal-footer {
+        font-size: 13px;
+        display: contents;
+        text-align: center;
+    }
+
+    .legal-footer li {
+        margin: 10px;
+    }
+
+    .social-network {
+        margin: 10px;
     }
     
     .container-container {
@@ -391,7 +401,7 @@ body::-webkit-scrollbar-thumb{
     }
 
     .container-container img{
-        width: 85px;
+        width: 75px;
     }
     .footer {
         display: block;
@@ -400,5 +410,7 @@ body::-webkit-scrollbar-thumb{
   }
 
   @media (min-width: 1200px) {
-    /* Agrega aquí los estilos para pantallas grandes */
+    .container img {
+        
+    }
   }

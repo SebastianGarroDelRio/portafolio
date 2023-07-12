@@ -3,25 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="assents/css/normalize.css">
     <link rel="stylesheet" href="assents/css/style.css">
+
+    <!-- Icono del navegador -->
     <link rel="icon" href="assents/img/ico-portafolio.png">
 
+    <!-- Titulo del navegador -->
     <title>| Sebastian Garro |</title>
+
 </head>
 
 <body>
+    <!-- INICIO Identificador de todo el cuerpo de la web-->
     <div id="page">
+
+        <!--Inicio Header-->
         <header>
             <div class="back">
                 <div class="menu header">
-                    <!-- Logo -->
+                    <!-- Logo Header -->
                     <a class="logo" href="index.html">&lt; <span>SG</span> /&gt;</a>
+                    <!-- Inicio MenuHamburguesa -->
                     <input type="checkbox" id="menu">
-                    <!-- MenuHamburguesa -->
-                    <label for="menu">
-                        <img class="menu-icono" src="assents/img/menu.png" alt="MenuHamburguesa">
-                    </label>
-    
+                    <label for="menu"><img class="menu-icono" src="assents/img/menu.png" alt="MenuHamburguesa"></label>
+                    <!-- Fin MenuHamburguesa -->
+
+                    <!-- Inicio Navegador -->
                     <nav class="navbar">
                         <ul>
                             <li><a class="activo" href="index.html">My profile</a></li>
@@ -30,13 +40,17 @@
                             <li><a href="#contacto">Contact</a></li>
                         </ul>
                     </nav>
-    
+                    <!-- Fin Navegador -->
                 </div>
             </div>
         </header>
+        <!-- Fin Header -->
 
+        <!-- Inicio Main (CUERPO DEL SITIO WEB) -->
         <main >
-            <section><!--debo agregar id para las anclas de la web-->
+
+            <!-- Inicio MenuLateral:Vertical -->
+            <section>
                 <div class="redes">
                     <a href="https://github.com/SebastianGarroDelRio" target="_blank"><img src="assents/img/github-logo-36.png" alt=""></a>
                     <div></div>
@@ -47,7 +61,9 @@
                     <a href="#" target="_blank"><img src="assents/img/whatsapp-logo-36.png" alt=""></a>
                 </div>
             </section>
+            <!-- Fin MenuLateral:Vertical -->
 
+            <!-- Mi perfil -->
             <section>
                 <div class="container">
                     <div class="info">
@@ -64,9 +80,10 @@
                     <img src="assents/img/persona_2.png" alt="Cargando..."/>
                 </div>
             </section>
-
-            <section >
-                    <div id="habilidades" class="container-two">
+            
+            <!-- Habilidades -->
+            <section id="habilidades">
+                    <div class="container-two">
                         <div class="container-container">
                             <img src="assents/img/html5-ico.png" alt="">
                             <img src="assents/img/css3-ico.png" alt="">
@@ -85,50 +102,59 @@
                         </div>
                     </div>
             </section>
-<hr>
-            <section>
-                <div id="proyectos" class="container-three">
+
+            <!-- Proyectos -->
+            <section id="proyectos">
+                <div class="container-three">
                     <h1>Projects</h1>
-                    <p>Aqui ira img con proyectos (puede ser un carrucel o cuadros separados)
-                    </p>
+                    <p>Aqui ira img con proyectos (puede ser un carrucel o cuadros separados)</p>
                 </div>
             </section>
 <hr>
-            <section>
-                <div id="contacto" class="container-four">
+            <!-- Contacto -->
+            <section id="contacto">
+                <div class="container-four">
                     <h1>Contact</h1>
-                    <p>Aqui ira img con proyectos (puede ser un carrucel o cuadros separados)
-                    </p>
+                    <p>Aqui ira img con proyectos (puede ser un carrucel o cuadros separados)</p>
                 </div>
             </section>
+
+
         </main>
-        
+        <!-- Fin Main (CUERPO DEL SITIO WEB) -->
+
+        <!-- Inicio Footer -->
         <footer class="footer">
+
             <section class="footer-content">
                 <div class="social-network">
-                    <a href="https://github.com/SebastianGarroDelRio" target="_blank"><img  src="assents/img/github-logo-36.png" alt=""></a>
-                    <a href="https://www.linkedin.com/in/sebasti%C3%A1n-garro-2b2490216/" target="_blank"><img  src="assents/img/linkedin-logo-36.png" alt=""></a>
-                    <a href="#" target="_blank"><img  src="assents/img/gmail-logo-36.png" alt=""></a>
-                    <a href="#" target="_blank"><img  src="assents/img/whatsapp-logo-36.png" alt=""></a>
+                    <a href="https://github.com/SebastianGarroDelRio" target="_blank"><img src="assents/img/github-logo-36.png" alt=""></a>
+                    <a href="https://www.linkedin.com/in/sebasti%C3%A1n-garro-2b2490216/" target="_blank"><img src="assents/img/linkedin-logo-36.png" alt=""></a>
+                    <a href="#" target="_blank"><img src="assents/img/gmail-logo-36.png" alt=""></a>
+                    <a href="#" target="_blank"><img src="assents/img/whatsapp-logo-36.png" alt=""></a>
                 </div>
             </section>
 
             <section class="legal-footer">
-                <nav>
-                    <ul>
-                        <li>(+51) 972242483 - hola@sebastian.pe</li>
-                        <li>&copy; Sebastian Garro - All rights reserved</li>
-                    </ul>
-                </nav>
+                
+                    <li>(+51) 972242483 - hola@sebastian.pe</li>
+                    <li>&copy; Sebastian Garro - All rights reserved</li>
+                
             </section>
     
         </footer>
+        <!-- Inicio Footer -->
+
     </div>
+    <!-- FIN Identificador de todo el cuerpo de la web-->
+
     <script type="text/javascript">
-         window.addEventListener("scroll", function() {
-        var menu = document.querySelector(".menu");
-        menu.classList.toggle("abajo", window.scrollY > 0);
-    });
+        window.addEventListener("scroll", function() 
+            {
+                var menu = document.querySelector(".menu");
+                menu.classList.toggle("abajo", window.scrollY > 0);
+            });
     </script>
+
 </body>
 </html>
