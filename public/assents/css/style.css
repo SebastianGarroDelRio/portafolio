@@ -95,6 +95,7 @@ body::-webkit-scrollbar-thumb{
 .back .abajo {
     background: #ffffff;
     padding: 10px 0;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 1px 0px;;
 }
 
 .abajo .logo span{
@@ -113,6 +114,11 @@ body::-webkit-scrollbar-thumb{
     justify-content: center;
 } */
 
+.menu .navbar {
+    display: flex;
+   
+}
+
 /*NO TOCAR LO DE AQUI*/
 .navbar li {
     list-style: none;
@@ -126,6 +132,8 @@ body::-webkit-scrollbar-thumb{
 /*menu fin*/
 
 /*Main section one*/
+
+
 .container, .container-two, .container-three, .container-four{
     /* width: 90vw; */
     height: 90vh;/*Largo pantalla total*/
@@ -178,7 +186,7 @@ body::-webkit-scrollbar-thumb{
 
 /*Main section two*/
 .container-two {
-    background-color: #27374D;
+    background-color: #ffffff;
 }
 
 /* .container-two img{
@@ -205,7 +213,9 @@ body::-webkit-scrollbar-thumb{
 
 /*Main section three*/
 .container-three {
-    background-color: #27374D;
+    background-color: #ffffff;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000 ;
 }
 
 /*Main section three*/
@@ -346,6 +356,7 @@ body::-webkit-scrollbar-thumb{
     .back {
         padding: 40px 0;
     }
+
     .menu .navbar{
         position: absolute;
         top: 100%;
