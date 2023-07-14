@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .container-proyecto {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+  }
+  
+  .container-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .container-mobil {
+    width: 100%;
+    border-top: 2px solid #000;
+  }
+  
+  /* Estilos de la lista de proyectos */
+  .proyecto-lista ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .proyecto-lista li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .proyecto-lista h1 {
+    font-size: 2em;
+    text-decoration: none;
+    color: #000;
+    padding: 5px 10px;
+  }
+  
+  /* Estilos de la lista de cartas de proyectos */
+  .lista-proyecto ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .lista-proyecto li {
+    background-color: #DDE6ED;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos de las cartas de proyectos */
+  .lista-proyecto figure {
+    position: relative;
+  }
+  
+  .galeria-img-proyecto {
+    width: 100%;
+    height: 280px; /* Ajusta la altura de la imagen aquí */
+    overflow: hidden;
+  }
+  
+  .galeria-img-proyecto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s ease;
+  }
+  
+  .galeria-img-proyecto:hover img {
+    filter: brightness(70%);
+  }
+  
+  figcaption {
+    margin-top: 15px; /* Ajusta el margen superior del elemento figcaption aquí */
+    text-align: center;
+  }
+  
+  figcaption h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #000;
+  }
+  
+  figcaption p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #000;
+  }
+  
+  /* Media query para 768px */
+  @media (max-width: 768px) {
+    .lista-proyecto ul {
+      grid-template-columns: 1fr; /* Cambia a una sola columna */
+    }
+  }
+  
+  

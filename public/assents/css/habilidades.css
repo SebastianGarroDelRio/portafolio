@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+.container-habilidades {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Estilos para el contenedor de la información de habilidades */
+.container-info-habilidades {
+  text-align: center;
+}
+
+.proyecto-habilidades-info {
+  background-color: #ffffff;
+  color: black;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.proyecto-habilidades-info h1 {
+  margin: 0;
+}
+
+.proyecto-habilidades-info p {
+  margin: 10px 0;
+}
+
+/* Estilos para el contenedor de la lista de habilidades */
+.container-container-habilidades {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.container-lista-habilidades {
+  background-color: #DDE6ED;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.galeria-img-habilidades {
+  margin-bottom: 10px;
+}
+
+.galeria-img-habilidades img {
+  max-width: 100%;
+  height: auto;
+}
+
+.titulo-habilidades {
+  font-weight: bold;
+  margin-top: 10px;
+  color: black;
+}
+
+.info-habilidades p {
+  margin: 10px 0;
+  color: black;
+}
+
+/* Estilos responsive */
+@media screen and (max-width: 768px) {
+  .container-habilidades,
+  .container-container-habilidades {
+    grid-template-columns: 1fr;
+  }
+
+  .container-lista-habilidades {
+    margin: 0;
+  }
+}
