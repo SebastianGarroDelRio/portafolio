@@ -310,7 +310,7 @@ body::-webkit-scrollbar-thumb{
         top: 100%;
         left: 0;        
         right: 0;
-        background-color: green;
+        background-color: #393E46;
         display: none;
     }
     .menu .navbar ul li {
