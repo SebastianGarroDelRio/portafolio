@@ -6,7 +6,7 @@ Este es mi portfolio creado con HTML, CSS y Javascript.
 
 **Sebastián Garro**
 
-* [LinkedIn](www.linkedin.com/in/sebastián-garro)
+* [LinkedIn](https://www.linkedin.com/in/sebasti%C3%A1n-garro/)
 * [Portfolio Web](https://portfolio-kohl-six-50.vercel.app/)
 
 ## Instalación
