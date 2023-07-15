@@ -1,8 +1,10 @@
-## Descripción
+## Descripción :mag:
 
 Este es mi portfolio creado con HTML, CSS y Javascript usando metodologia BEM y una Arquitectura ITCSS.
 
-## Autor - **Sebastián Garro**
+## Autor :black_nib:
+
+**Sebastián Garro**
 
 * [LinkedIn](www.linkedin.com/in/sebastián-garro)
 * [Portfolio]([url](https://portfolio-kohl-six-50.vercel.app/))
@@ -10,5 +12,5 @@ Este es mi portfolio creado con HTML, CSS y Javascript usando metodologia BEM y 
 ## Instalación
 Este proyecto no necesita instalación. Simplemente abre la carpeta o haz doble click en el .html
 
-## Contratación
+## Contratación :wave:
 Si quieres contratarme puedes escribirme a sebastiangarrodelrio@gmail.com para consultas.
