@@ -1,6 +1,6 @@
 ## Descripción :mag:
 
-Este es mi portfolio creado con HTML, CSS y Javascript usando metodologia BEM y una Arquitectura ITCSS.
+Este es mi portfolio creado con HTML, CSS y Javascript.
 
 ## Autor :black_nib:
 
